@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active2", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active2";
+  }
+  </script>
+
+
+    <title>Evega test</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="Agency.css">
+    <script src="Agency.js"></script>
+    
+  </head>
+  <body id="index">
+    <header >
+        <section class="contact-sec" style="display: flex;">
+            <div class="social-icons">
+
+                <div class="icons icon-fb"><a href="#" class="fa fa-n fa-facebook"></a></div>
+                <div class="icons icon-tw"><a href="#" class="fa fa-n fa-twr">tw</a></div>
+                <div class="icons icon-g"><a href="#" class="fa fa-n fa-ggl">g+</a></div>
+                <div class="icons icon-in"><a href="#" class="fa fa-n fa-linkedin"></a></div>
+                <div class="icons icon-tube"><a href="#" class="fa fa-n fa-Utube"><span class="fa-Tube-tb">Tube</span></a></div>
+            </div>
+
+            <div class="header-contact">
+               <div class="cont"> <span class=" contact1"><i class='fa fa-phone'></i>+1 (234) 56-78-90</span></div>
+               <div class="cont"> <span class=" contact1"><i class='fa fa-phone'></i>+1 (234) 56-78-91</span></div>
+               <div class="cont"><!--<input class="btn-call" type="button" value="CALL ME BACK">--> <a class="btn-call" href="tel:1234567890">CALL ME BACK</a></div>
+
+
+            </div>
+
+        </section>
+        
+        <div style="display: flex;">
+            <div class="tagline">
+                <p>AGENCY</p>
+                <pre class="tagline-sub">COMPANY<br>TAGLINE HERE</pre>
+            </div>
+
+    
+            <nav class="header-menu" id="menu">
+                <ul>
+                    <li class="links"><a>Why Us</a></li>
+                    <li class="links"><a>About</a></li>
+                    <li class="links"><a>Services</a></li>
+                    <li class="active"><a href="Agency.html">Portfolio</a></li>
+                    <li class="links"><a>Process</a></li>
+                    <li class="links"><a>Reviews</a></li>
+                    <li class="links"><a>Our Skills</a></li>
+                    <li class="links"><a>Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+          
+    </header>
+    
+     <section>
+
+      <div class="devider-line"></div>
+     </section>
+     <!-- slider banner-->
+
+     <div class="slideshow-container">
+      
+
+      <div class="mySlides fade">
+        
+        <img class="slideimage" src="images-slider/img21.png" style="width:100%">
+        <div class="text-module">
+            <div style="justify-content: space-evenly; display: flex;">
+                  
+                  <div><h1 style="color: #fff;">WE ARE EXPERTS</h1></div>
+                  
+      
+              </div><br>
+        
+              <div class="text"><span>Lorem ipsum dolor sit amet, consectetur sadipscing elit. sed diam nonumy <br> eirmod tempor invidunt ut labore et dolore magna aliquam erat</span></div>
+            <div class="btn-banner"><a href="Agency.html" id="form-btn">READ MORE</a></div>
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        
+        <img class="slideimage" src="images-slider/img1.png" style="width:100%">
+        <div class="text-module">
+          <div style="justify-content: space-evenly; display: flex;">
+              
+              <div><h1 style="color: #fff;">WE ARE EXPERTS</h1></div>
+              
+      
+          </div><br>
+      
+          <div class="text"><span>Lorem ipsum dolor sit amet, consectetur sadipscing elit. sed diam nonumy <br> eirmod tempor invidunt ut labore et dolore magna aliquam erat</span></div>
+          <div class="btn-banner"><a href="Agency.html" id="form-btn">READ MORE</a></div>
+      </div>
+      </div>
+      
+      <div class="mySlides fade">
+        
+        <img class="slideimage" src="images-slider/img3.png" style="width:100%">
+        <div class="text-module">
+          <div style="justify-content: space-evenly; display: flex;">
+              
+              <div><h1 style="color: #fff;">WE ARE EXPERTS</h1></div>
+              
+      
+          </div><br>
+      
+          <div class="text"><span>Lorem ipsum dolor sit amet, consectetur sadipscing elit. sed diam nonumy <br> eirmod tempor invidunt ut labore et dolore magna aliquam erat</span></div>
+          <div class="btn-banner"><a href="Agency.html" id="form-btn">READ MORE</a></div>
+      </div>
+      </div>
+      
+      
+      
+      </div>
+      <br>
+      
+      <div class="bots-module" style="text-align:center; z-index: 1;">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+
+
+
+    <!-- Our Advantages -->
+    
+    <section class="our-service">
+      <div class="service-h2"><h2><span class="span1">OUR </span><span class="span2">ADVANTAGES</span></h2></div>
+     <br>
+      <div class="Services-sub-text">
+        <span>Lorem ipsum dolor sit amet, consectetur sadipscing elit. sed diam nonumy eirmod <br> tempor invidunt ut labore et dolore magna aliquam erat</span>
+      </div> 
+      <div class="Services-4cols Services-5cols" style="display: flex;">
+        <div class="col">
+          <img src="icons/innovation.png" alt="">
+          <!-- <i class="fa fa fa-thumbs-o-up"></i> -->
+          <div class="service-h3 service-h3adv"><h3><span class="span1">INNOVATION</span></h3></div>
+            <br>
+          <div class="Services-sub-text Services-sub-col-text">
+          <span>Lorem ipsum dolor sit amet, <br> consectetur sadipscing elit. sed <br> diam nonumy eirmod </span>
+          </div> 
+          
+        </div>
+        <div class="col">
+          <img src="icons/quality.png" alt="">
+          <div class="service-h3 service-h3adv"><h3><span class="span1">QUALITY</span></h3></div>
+            <br>
+          <div class="Services-sub-text Services-sub-col-text">
+          <span>Lorem ipsum dolor sit amet, <br> consectetur sadipscing elit. sed <br> diam nonumy eirmod </span>
+          </div> 
+          
+        </div>
+        <div class="col">
+          <img src="icons/experience.png" alt="">
+          <div class="service-h3 service-h3adv"><h3><span class="span1">EXPERIENCE</span></h3></div>
+            <br>
+          <div class="Services-sub-text Services-sub-col-text">
+          <span>Lorem ipsum dolor sit amet, <br> consectetur sadipscing elit. sed <br> diam nonumy eirmod </span>
+          </div> 
+          
+        </div>
+        <div class="col">
+          <img src="icons/happyclient.png" alt="">
+          <div class="service-h3 service-h3adv"><h3><span class="span1">HAPPY CLIENTS</span></h3></div>
+            <br>
+          <div class="Services-sub-text Services-sub-col-text">
+          <span>Lorem ipsum dolor sit amet, <br> consectetur sadipscing elit. sed <br> diam nonumy eirmod </span>
+          </div> 
+          
+        </div>
+        <div class="col">
+          <img src="icons/support.png" alt="">
+          <div class="service-h3 service-h3adv"><h3><span class="span1">SUPPORT</span></h3></div>
+            <br>
+          <div class="Services-sub-text Services-sub-col-text">
+          <span>Lorem ipsum dolor sit amet, <br> consectetur sadipscing elit. sed <br> diam nonumy eirmod </span>
+          </div> 
+          
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+<!-- Section new project request -->
+    <section class="new-project">
+      <div class="service-h2 project-h2"><h2><span class="span1">START YOUR NEW PROJECT</span></h2></div>
+     <br>
+     <form class="start-form" action="Thank.html">
+
+      <input class="form-input" type="text" name="name" id="name" placeholder="YOUR NAME" height="50px" width="150px">
+      <input class="form-input" type="email" name="email-id" id="email-id" placeholder="YOUR EMAIL" height="50px" width="150px">
+      <input class="form-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{2}[0-9]{3}" placeholder="YOUR PHONE" height="50px" width="150px">
+      <input type="submit" value="SEND REQUEST" id="form-btn">
+     </form>
+
+     <br>
+      <div class="Services-sub-text new-project-text">
+        <span>Lorem ipsum dolor sit amet, consectetur sadipscing elit. sed diam nonumy eirmod tempor invidunt ut labore <br> et dolore magna aliquam erat</span>
+      </div> 
+      
+      </div>
+
+
+    </section>
+
+
+
+
+
+<!-- our service section -->
+    <section class="our-service">
+      <div class="service-h2"><h2><span class="span1">OUR </span><span class="span2">SERVICES</span></h2></div>
+     <br>
+      <div class="Services-sub-text">
+        <span>Lorem ipsum dolor sit amet, consectetur sadipscing elit. sed diam nonumy eirmod <br> tempor invidunt ut labore et dolore magna aliquam erat</span>
+      </div> 
+      <div class="Services-4cols" style="display: flex;">
+        <div class="col">
+          <i class="fa fa-star"></i>
+          <div class="service-h3"><h3><span class="span1">WEB DESIGN</span></h3></div>
+            <br>
+          <div class="Services-sub-text Services-sub-col-text">
+          <span>Lorem ipsum dolor sit amet, <br> consectetur sadipscing elit. sed <br> diam nonumy eirmod </span>
+          </div> 
+          <div class="link-rm"> <a href="Agency.html">read more</a></div>
+        </div>
+        <div class="col">
+          <i class="fa fa-star"></i>
+          <div class="service-h3"><h3><span class="span1">GRAPHIC DESIGN</span></h3></div>
+            <br>
+          <div class="Services-sub-text Services-sub-col-text">
+          <span>Lorem ipsum dolor sit amet, <br> consectetur sadipscing elit. sed <br> diam nonumy eirmod </span>
+          </div> 
+          <div class="link-rm"> <a href="Agency.html">read more</a></div>
+        </div>
+        <div class="col">
+          <i class="fa fa-star"></i>
+          <div class="service-h3"><h3><span class="span1">BRANDIGN</span></h3></div>
+            <br>
+          <div class="Services-sub-text Services-sub-col-text">
+          <span>Lorem ipsum dolor sit amet, <br> consectetur sadipscing elit. sed <br> diam nonumy eirmod </span>
+          </div> 
+          <div class="link-rm"> <a href="Agency.html">read more</a></div>
+        </div>
+        <div class="col">
+          <i class="fa fa-star"></i>
+          <div class="service-h3"><h3><span class="span1">MARKETING</span></h3></div>
+            <br>
+          <div class="Services-sub-text Services-sub-col-text">
+          <span>Lorem ipsum dolor sit amet, <br> consectetur sadipscing elit. sed <br> diam nonumy eirmod </span>
+          </div> 
+          <div class="link-rm"> <a href="Agency.html">read more</a></div>
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+    
+    <footer>
+        <div class="footer-1st-cld">
+          <div class="tagline tagline1">
+            <p>AGENCY</p>
+            <pre class="tagline-sub tagline-sub1">COMPANY<br>TAGLINE HERE</pre>
+          </div>
+        <div class="footer-text1">
+          Lorem ipsum dolor sit amet,<br> consectetur sadipscing elit. sed <br> diam nonumy eirmod tempor <br> invidunt ut labore et dolore magna <br> aliquam erat, sed diam voluptua.
+        </div>
+          &nbsp;
+          &nbsp;
+        <small>© Agency 2016</small>
+      </div>
+      <div class="footer-2nd-cld">
+        <h2 class="footer-h2">SERVICES</h2><br>
+
+        <a href="Agency.html">Lorem Ipsum</a><br>
+        <a href="Agency.html">Lorem</a><br>
+        <a href="Agency.html">Lorem Ipsum Dolor</a><br>
+        <a href="Agency.html">Lorem Ipsum</a><br>
+        <a href="Agency.html">Lorem</a><br>
+        <a href="Agency.html">Lorem Ipsum Dolor</a><br>
+        <a href="Agency.html">Lorem Ipsum Dolor</a>
+
+
+      </div>
+      <div class="footer-2nd-cld footer-3rd-cld">
+        <h2 class="footer-h2">USEFUL LINKS</h2><br>
+
+        <a href="Agency.html">Lorem Ipsum</a><br>
+        <a href="Agency.html">Lorem</a><br>
+        <a href="Agency.html">Lorem Ipsum Dolor</a><br>
+        <a href="Agency.html">Lorem Ipsum</a><br>
+        <a href="Agency.html">Lorem</a><br>
+        <a href="Agency.html">Lorem Ipsum Dolor</a><br>
+        <a href="Agency.html">Lorem Ipsum Dolor</a>
+
+
+      </div>
+      <div class="footer-4th-cld footer-3rd-cld">
+        <h2 class="footer-h2 footer-h2-1">CONTACTS</h2><br>
+
+        <div class="cont cont1"> <span class=" contact1"><i class='fa fa-phone'></i>+1 (234) 56-78-90</span></div><br>
+        <div class="cont cont1"> <span class=" contact1"><i class='fa fa-phone'></i>+1 (234) 56-78-91</span></div><br>
+        <div class="cont cont1"> <span class=" contact1"><i class='fa fas fa-envelope'></i>info@website.com</span></div><br>
+
+        <h2 class="footer-h2 footer-h2-0">FOLLOW US</h2><br>
+
+        <div class="social-icons">
+
+          <div class="icons icons1 icon-fb icon-footers"><a href="#" class="fa fa-n fa-facebook"></a></div>
+          <div class="icons icons1 icon-tw icon-footers"><a href="#" class="fa fa-n fa-twr">tw</a></div>
+          <div class="icons icons1 icon-g icon-footers"><a href="#" class="fa fa-n fa-ggl">g+</a></div>
+          <div class="icons icons1 icon-in icon-footers"><a href="#" class="fa fa-n fa-linkedin"></a></div>
+          <div class="icons icons1 icon-tube icon-footers"><a href="#" class="fa fa-n fa-Utube"><span class="fa-Tube-tb">Tube</span></a></div>
+      </div>
+      </div>
+      
+    </footer>
+  </body>
+</html>
